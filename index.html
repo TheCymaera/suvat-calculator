@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+
+	<title>Suvat Calculator</title>
+	<link rel="icon" href="/favicon.ico" type="image/png">
+
+	<meta name="author" content="Cymaera">
+    <meta name="description" content="Suvat Calculator.">
+	<meta name="keywords" content="Suvat, Physics, Equations, of, motion">
+	
+    <meta property="og:title" content="Suvat Calculator"/>
+    <meta property="og:description" content="Suvat Calculator."/>
+    <meta property="og:url"   content="https://www.heledron.com/tools/suvat-calculator/"/>
+    <meta property="og:image" content="https://www.heledron.com/tools/suvat-calculator/icon.png"/>
+    <meta property="og:type"  content="website" />
+	
+	<script src="./main.js" type="module"></script>
+	<link rel="stylesheet" href="./main.css" type="text/css" />
+	<link rel="stylesheet" href="./fancy-checkbox.css" type="text/css" />
+</head>
+<body>
+<!-- Main Section -->
+<main>
+	<!-- Precision Input -->
+	<section id="precision-section">
+		<label class="fancy-checkbox">
+			<input data-ui="precision" type="checkbox" checked />
+			<span>Auto Precision</span>
+		</label>
+	</section>
+	
+	<!-- Variable Inputs -->
+	<section id="variables-section">
+		<div class="suvat-variable">
+			<label>
+				<span>S</span>
+				<input data-ui="s" type="number" step="any" placeholder="Displacement" />
+			</label>
+			<button data-ui="clearS">Clear</button>
+		</div>
+		<div class="suvat-variable">
+			<label>
+				<span>U</span>
+				<input data-ui="u" type="number" step="any" placeholder="Initial velocity" />
+			</label>
+			<button data-ui="clearU">Clear</button>
+		</div>
+		<div class="suvat-variable">
+			<label>
+				<span>V</span>
+				<input data-ui="v" type="number" step="any" placeholder="Final velocity" />
+			</label>
+			<button data-ui="clearV">Clear</button>
+		</div>
+		<div class="suvat-variable">
+			<label>
+				<span>A</span>
+				<input data-ui="a" type="number" step="any" placeholder="Acceleration" />
+			</label>
+			<button data-ui="clearA">Clear</button>
+		</div>
+		<div class="suvat-variable">
+			<label>
+				<span>T</span>
+				<input data-ui="t" type="number" step="any" placeholder="Time" />
+			</label>
+			<button data-ui="clearT">Clear</button>
+		</div>
+	</section>
+	
+	<!-- Buttons -->
+	<section id="buttons-section">
+		<button data-ui="calculate">Calculate</button>
+		<button data-ui="reset">Reset</button>
+	</section>
+
+	<section id="output-section">
+		<output data-ui="message"></output>
+	</section>
+</main>
+
+<!-- Info section -->
+<aside data-ui="infoSection">
+	<h2>Info</h2>
+	SUVAT is colloquial for the equations of motion.<br>
+	Enter 3 of the 5 values and hit calculate to find the other 2.<br>
+	'Known' values are highlighted in green.<br>
+	Remember to enter your variables in SI units!<br>
+	<br>
+	<h3>Links</h3>
+	<a href="https://github.com/TheCymaera/suvat">Code on GitHub</a>
+</aside>
+
+<!-- Buffer -->
+<div></div>
+
+</body>
+</html>
