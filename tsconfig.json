@@ -1,11 +1,9 @@
 {
 	"compilerOptions": {
-		"rootDir": "src",
-		"outDir": "dst",
 		"module": "ESNext",
 		"target": "ESNext",
 
-		"moduleResolution": "node",
+		"moduleResolution": "nodenext",
 		
 		"strictNullChecks": true,
 		"noImplicitThis": true,
@@ -13,11 +11,16 @@
 		"noUncheckedIndexedAccess": true,
 		"alwaysStrict": true,
 
+		"isolatedModules": true,
+		"importsNotUsedAsValues": "preserve",
 		"preserveConstEnums": true,
-		"sourceMap": true,
-
-		"lib": ["ESNext","DOM"],
 
 		"skipDefaultLibCheck": true,
-	},
+
+		"noEmit": true,
+
+		"lib": ["ES2020", "DOM", "DOM.Iterable"],
+
+		"baseUrl": ".",
+	}
 }

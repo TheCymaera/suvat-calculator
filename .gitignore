@@ -1,4 +1,4 @@
-/.DS_Store
-/public/dst
-/node_modules
-/pnpm-lock.yaml
+node_modules
+dist
+.DS_Store
+pnpm-lock.yaml

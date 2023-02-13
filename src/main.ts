@@ -1,5 +1,9 @@
 import * as suvat from "suvat";
-import "./main.scss";
+
+import {} from "helion/core.js";
+import {} from "helion/LightTheme.js";
+import {} from "helion/AppBar.js";
+import "./main.css";
 
 const messageText = document.getElementById("message")!;
 
