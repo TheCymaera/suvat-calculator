@@ -4,117 +4,18 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<!-- title & favicon -->
-	<title><%- page_title %></title>
-	<link rel="icon" href="/favicon.png" type="image/png"/>
-	<link rel="canonical" href="<%- page_url %>"/>
-	
 	<!-- info -->
-	<meta name="author" content="<%- page_author %>"/>
-	<meta name="description" content="<%- page_description %>"/>
-	<meta name="keywords" content="<%- page_keywords %>"/>
-	
-	<!-- sharing -->
-	<meta property="og:title" content="<%- page_og_title %>"/>
-	<meta property="og:description" content="<%- page_og_description %>"/>
-	<meta property="og:url"   content="<%- page_og_url %>"/>
-	<meta property="og:image" content="<%- page_og_image %>"/>
-	<meta property="og:type"  content="<%- page_og_type %>"/>
+	<title>Suvat Calculator</title>
+	<meta name="description" content="Solve SUVAT equations."/>
+	<link rel="canonical" href="https://heledron.com/tools/suvat-calculator/"/>
+	<meta property="og:image" content="https://heledron.com/tools/suvat-calculator/thumbnail.webp"/>
+	<meta name="author" content="Morgan"/>
+	<meta name="keywords" content="Heledron, Hadron, Cymaera, suvat, physics, Newton, equations, of, motion"/>
+	<link rel="icon" href="/favicon.png" type="image/png"/>
 
 	<!-- scripts -->
 	<script type="module" src="./src/main.ts"></script>
 </head>
 <body>
-	<helion-standard-view>
-		<helion-app-bar slot="header" center-title>
-			<helion-app-bar-left>
-				<a class="helion-app-bar-icon-button" href="/" title="Home">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>
-				</a>
-			</helion-app-bar-left>
-			<helion-app-bar-title>Suvat Calculator</helion-app-bar-title>
-		</helion-app-bar>
-		<main slot="body" style="overflow: auto;">
-			<br />
-			<br />
-			<suvat-app>
-				<suvat-app-main>
-					<section id="variablesSection">
-						<div class="suvat-variable">
-							<label>
-								<span>S</span>
-								<input id="inputS" type="number" step="any" placeholder="Displacement" />
-							</label>
-							<button id="clearS">Clear</button>
-						</div>
-						<div class="suvat-variable">
-							<label>
-								<span>U</span>
-								<input id="inputU" type="number" step="any" placeholder="Initial velocity" />
-							</label>
-							<button id="clearU">Clear</button>
-						</div>
-						<div class="suvat-variable">
-							<label>
-								<span>V</span>
-								<input id="inputV" type="number" step="any" placeholder="Final velocity" />
-							</label>
-							<button id="clearV">Clear</button>
-						</div>
-						<div class="suvat-variable">
-							<label>
-								<span>A</span>
-								<input id="inputA" type="number" step="any" placeholder="Acceleration" />
-							</label>
-							<button id="clearA">Clear</button>
-						</div>
-						<div class="suvat-variable">
-							<label>
-								<span>T</span>
-								<input id="inputT" type="number" step="any" placeholder="Time" />
-							</label>
-							<button id="clearT">Clear</button>
-						</div>
-					</section>
-					
-					<!-- Buttons -->
-					<section id="buttonsSection">
-						<button id="calculate">Calculate</button>
-						<button id="clearAll">Reset</button>
-					</section>
-
-					<section id="outputSection">
-						<output id="message"></output>
-					</section>
-				</suvat-app-main>
-
-				<!-- Info section -->
-				<suvat-app-info id="infoSection">
-					<h2>Info</h2>
-					<p>
-						SUVAT is colloquial for the equations of motion.
-					</p>
-					
-					<p>
-						Enter 3 of the 5 values and hit <i>calculate</i> to find the other 2.<br>
-						Known values are highlighted in green.
-					</p>
-
-					<p>
-						Remember to enter your variables in SI units!
-					</p>
-
-					<h3>Code</h3>
-					<a href="https://github.com/TheCymaera/suvat-js">SUVAT Library</a> <br />
-					<a href="https://github.com/TheCymaera/suvat-calculator">SUVAT Calculator</a>
-				</suvat-app-info>
-
-				<!-- Buffer -->
-				<suvat-app-buffer></suvat-app-buffer>
-			</suvat-app>
-
-			<div style="flex: 1;"></div>
-		</main>
-	</helion-standard-view>
 </body>
 </html>
